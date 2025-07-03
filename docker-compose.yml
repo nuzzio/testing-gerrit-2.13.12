@@ -1,0 +1,25 @@
+services:
+  gerrit:
+    image: docker.io/gerritcodereview/gerrit:2.13.12
+    platform: linux/amd64
+    ports:
+      - "8080:8080"
+      - "29418:29418"
+    environment:
+      - CANONICAL_WEB_URL=http://localhost:8080
+    volumes:
+      - gerrit-etc:/var/gerrit/etc
+      - gerrit-git:/var/gerrit/git
+      - gerrit-index:/var/gerrit/index
+      - gerrit-cache:/var/gerrit/cache
+      - gerrit-db:/var/gerrit/db
+      - gerrit-plugins:/var/gerrit/plugins
+    restart: unless-stopped
+
+volumes:
+  gerrit-etc:
+  gerrit-git:
+  gerrit-index:
+  gerrit-cache:
+  gerrit-db:
+  gerrit-plugins:
