@@ -26,28 +26,17 @@ This will:
 ## Step 2: Configure Gerrit
 
 ### 2.1 Access Gerrit UI
-Open http://localhost:8080 in your browser
+1. Open http://localhost:8080 in your browser
 
 ### 2.2 Register a user account
-
-Click "Become" in upper right
-
-Click "New Account" under Register
-
-Enter the same email you use for Git commits
-
-Enter Full Name
-
-Save changes
-
-Click "Select Username"
-
-enter a username
-
-click "Continue"
-
-
-
+1. Click "Become" in upper right
+2. Click "New Account" under Register
+3. Enter the same email you use for Git commits
+4. Enter Full Name
+5. Save changes
+6. Click "Select Username"
+7. Enter a username
+8. Click "Continue"
 
 ### 2.3 Generate HTTP password
 1. Click your username (top right) → Settings
@@ -55,14 +44,10 @@ click "Continue"
 3. Click "Generate Password"
 4. **Save this password** - you'll need it for Git operations
 
-
-
-
 ### 2.4 Set up Administrator access
 
-Click your username (top right) → Switch Account
-Choose "Administrator"
-
+1. Click your username (top right) → Switch Account
+2. Choose "Administrator"
 3. Go to People → List Groups → Administrators
 4. Add your user to the Administrators group
 
@@ -72,8 +57,8 @@ Choose "Administrator"
 3. Save changes
 
 ### 2.6 Configure All-Projects permissions
-2. While in All-Projects - Click Access
-4. Ensure Administrators group has Push permission
+1. While in All-Projects - Click Access
+2. Ensure Administrators group has Push permission for refs/meta/config
 
 ## Step 3: Enable Git Authentication
 
